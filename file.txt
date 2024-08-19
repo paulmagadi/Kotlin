@@ -35,3 +35,14 @@ fun main() {
         println()
     }
 }
+
+There is also an alternative way to implement that. You can use the downTo function, and in such a case, the for-loop variable does not indicate what the row number is. Instead, it indicates how many stars you should have in the following row. 
+
+fun main() {
+    for (numberOfStars in 5 downTo 1) {
+        for (i in 1..numberOfStars) {
+            print("*")
+        }
+        println()
+    }
+}
