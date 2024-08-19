@@ -46,3 +46,16 @@ fun main() {
         println()
     }
 }
+
+
+It can also be easily parametrized to a certain height:
+
+fun main() {
+    val height = 10
+    for (numberOfStars in height downTo 1) {
+        for (j in 1..numberOfStars) {
+            print("*")
+        }
+        println()
+    }
+}
