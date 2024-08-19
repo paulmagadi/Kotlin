@@ -59,3 +59,23 @@ fun main() {
         println()
     }
 }
+
+How do you produce it? 
+The answer is to first make one triangle and then another one. Notice that in this triangle, you add two stars at each step until the desired width is reached. Let's assume that you will parametrize your triangle by its maximal width. Then you will use one for-loop printing upper stars. So it should start at 1 star, make step 2, and add until width. The second for-loop will start at width, go down to 1, with a step 2. Notice that in the first for-loop, you should use until instead of .., because if you don't, then the width number of stars will be printed twice: both by the first and by the second for-loop.
+
+
+fun main() {
+    val width = 5
+    for (i in 1 until width step 2) {
+        for (j in 1..i) {
+            print("*")
+        }
+        println()
+    }
+    for (i in width downTo 1 step 2) {
+        for (j in 1..i) {
+            print("*")
+        }
+        println()
+    }
+}
