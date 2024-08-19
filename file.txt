@@ -8,3 +8,30 @@ fun main() {
         println()
     }
 }
+
+
+Parametrizing a triangle
+
+fun main() {
+    val height = 10
+    for (i in 1..height) {
+        for (j in 1..i) {
+            print("*")
+        }
+        println()
+    }
+}
+
+
+downTo function
+You've also learned how to make a triangle that starts with five stars and ends with one.
+
+fun main() {
+    for (i in 1..5) {
+        val numberOfStars = 6 - i
+        for (j in 1..numberOfStars) {
+            print("*")
+        }
+        println()
+    }
+}
